@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訂單明細</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="order">
+        <h3>訂單摘要</h3>
+        <div><span>小計</span> <span>NT$ 2,700</span></div>
+        <div><span>運費</span> <span>NT$ 300</span></div>
+        <div><span>總計</span> <span>NT$ 3,000</span></div>
+      </div>
+      <div class="cart">
+        <h3>購物清單</h3>
+        <ul>
+          <li>
+            <img src="https://picsum.photos/120/80" alt="" />
+            <div class="cartItem">
+              <p>市場價大吾 (2)</p>
+              <span>NT$ 900</span>
+            </div>
+          </li>
+          <li>
+            <img src="https://picsum.photos/120/80" alt="" />
+            <div class="cartItem">
+              <p>市場價大吾 (2)</p>
+              <span>NT$ 900</span>
+            </div>
+          </li>
+          <li>
+            <img src="https://picsum.photos/120/80" alt="" />
+            <div class="cartItem">
+              <p>市場價大吾 (2)</p>
+              <span>NT$ 900</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <style>
+    .container {
+      margin: 0 auto;
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .order {
+      width: 20%;
+      border: 1px solid lightgray;
+      padding-bottom: 1rem;
+    }
+    .order div {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1rem;
+    }
+    .order div:last-child {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .cart {
+      margin-top: 1.5rem;
+      width: 20%;
+      border: 1px solid lightgray;
+    }
+    h3 {
+      text-align: center;
+      background-color: #eaf0ed;
+      padding: 1rem 0;
+    }
+    .cart ul {
+      padding: 1.2rem 0;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0 1rem;
+    }
+    li:nth-child(2),
+    li:nth-child(3) {
+      margin-top: 1rem;
+    }
+  </style>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>圖文並排設計</title>
+  </head>
+  <link rel="stylesheet" href="./style.css" />
+  <body>
+    <header>
+      <nav>
+        <img src="./assets/6.圖文並排/logo.png" alt="logo" />
+        <a href="#">more</a>
+      </nav>
+    </header>
+    <main>
+      <div class="picture">
+        <img src="https://picsum.photos/200/400" alt="" />
+      </div>
+      <div class="content">
+        <div class="intro">
+          <h2>來電內容，離開的人，聲音。</h2>
+          <p>
+            圖文受到加強搜尋周圍往往本網站官方，結合點點就不中央西安陷入效果十二功能樹林下載歡迎您，地上定義你就秘密隨意事故查詢註。
+          </p>
+          <p>
+            郵遞區號，線上那樣又是方案下去程度學歷你能外資，隊伍交給類似清楚有限年輕人，快。
+          </p>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#">FB分享</a></li>
+            <li><a href="#">IG分享</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+  <style>
+    body {
+      border: 10px solid #3e5d45;
+    }
+    header {
+      background-color: #eaf0ed;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 4rem;
+    }
+    nav a {
+      font-weight: bold;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      margin: 3rem 0;
+      gap: 3rem;
+    }
+    .content {
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .content h2 {
+      text-align: left;
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .content ul {
+      display: flex;
+      gap: 1.5rem;
+    }
+    .content ul li a {
+      text-decoration: underline;
+    }
+  </style>
+</html>

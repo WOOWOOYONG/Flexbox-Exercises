@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>產品列表</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <h3>甜點類別</h3>
+        <ul>
+          <li>所有甜點(45)</li>
+          <li>本日精選(10)</li>
+          <li>人氣精選(26)</li>
+          <li>新品上市(12)</li>
+        </ul>
+      </div>
+      <div class="content">
+        <ul>
+          <li>
+            <img src="https://picsum.photos/230/280" />
+            <div class="info">
+              <span>焦糖甜甜圈</span>
+              <span>NT$ 450</span>
+            </div>
+            <button type="button">加入購物車</button>
+          </li>
+          <li>
+            <img src="https://picsum.photos/230/280" />
+            <div class="info">
+              <span>焦糖甜甜圈</span>
+              <span>NT$ 450</span>
+            </div>
+            <button type="button">加入購物車</button>
+          </li>
+          <li>
+            <img src="https://picsum.photos/230/280" />
+            <div class="info">
+              <span>焦糖甜甜圈</span>
+              <span>NT$ 450</span>
+            </div>
+            <button type="button">加入購物車</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      max-width: 50%;
+    }
+    .sidebar {
+      width: 30%;
+    }
+    .sidebar h3 {
+      margin: 0;
+      background-color: #3e5d45;
+      text-align: center;
+      color: #fff;
+      padding: 0.8rem;
+    }
+    .sidebar ul {
+      text-align: center;
+    }
+    .sidebar li {
+      padding: 0.8rem;
+      color: #3e5d45;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 0.5px solid lightgray;
+      cursor: pointer;
+    }
+    .sidebar li:first-child {
+      background-color: #eaf0ed;
+    }
+    .sidebar li:hover {
+      background-color: #eaf0ed;
+      transition: all 0.3s ease;
+    }
+    .content {
+      width: 70%;
+      padding: 0 1rem;
+    }
+    .content ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      border: 0.5px solid lightgray;
+    }
+    .info span {
+      text-align: center;
+      flex-grow: 1;
+      font-weight: bold;
+      color: #3e5d45;
+      padding: 1rem 0.2rem;
+    }
+
+    .info span:nth-child(2n-1) {
+      border-right: 0.5px solid lightgray;
+    }
+
+    .content ul li img {
+      width: 100%;
+      vertical-align: middle;
+    }
+    button {
+      display: block;
+      width: 100%;
+      background-color: #eaf0ed;
+      color: #3e5d45;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 1rem 0;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3e5d45;
+      color: #eaf0ed;
+      transition: all 0.3s ease;
+    }
+  </style>
+</html>
